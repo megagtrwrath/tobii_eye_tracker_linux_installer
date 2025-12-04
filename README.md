@@ -7,6 +7,22 @@ The manager is obtained from:
 https://www.tobiipro.com/es/learn--support/downloads/
 (Changed to: https://www.tobiipro.com/product-listing/eye-tracker-manager/)
 
+I have pre-applied modifications to get the manager to run as to simplify the install experience.
+The changes made are below:
+
+cd /opt/TobiiProEyeTrackerManager/resources
+
+asar extract app.asar app.asar.unpack
+rm app.asar
+
+sed -ri "s/types_1\.EtmModuleType\.TELEMETRY//g" app.asar.unpack/config.js
+sed -ri "s/TPSP1/IS5FF/g" app.asar.unpack/main.*.js
+
+asar pack app.asar.unpack app.asar
+rm -rf app.asar.unpack
+
+This allows the manager to launch and operate normally
+
 #### Instalation
 
 CD ./tobii_eye_tracker_linux_installer
