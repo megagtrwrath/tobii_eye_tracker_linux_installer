@@ -1,4 +1,4 @@
-It allows to install the drivers and development libraries to operate devices compatible with IS4 (Tobii 4C) and Tobii Eye Tracker 5.
+#### This repo features a modified version of the official Tobii Pro drivers to enable support of the IS4/IS5 [Eye Tracker 4c and 5]
 
 The deps packages were obtained from the tobii page:
 https://developer.tobii.com/consumer-eye-trackers/stream-engine/getting-started
@@ -46,7 +46,7 @@ gcc  main.cpp -o main -pthread /usr/lib/tobii/libtobii_stream_engine.so
 
 ./main
 
-![Example test](media/demo.png)
+![Example test](images/demo.png)
 
 
 You will see how the tracker captures the position of the screen you are looking at
