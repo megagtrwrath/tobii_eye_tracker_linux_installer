@@ -1,0 +1,12 @@
+[Unit]
+Description=Tobii Engine Service
+After=network.target
+
+[Service]
+Type=simple
+Environment=
+ExecStart=/usr/share/tobii_engine/tobii_engine --daemonize
+RestartSec=5
+
+[Install]
+WantedBy=graphical.target
