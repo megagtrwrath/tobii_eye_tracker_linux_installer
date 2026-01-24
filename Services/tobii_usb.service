@@ -5,7 +5,7 @@ Requires=tobii_engine.service
 [Service]
 Type=forking
 Environment=
-ExecStartPre=mkdir /var/run/tobiiusb
+ExecStartPre=mkdir -p /var/run/tobiiusb
 ExecStart=/usr/bin/tobiiusbserviced
 ExecReload=rm -rf /var/run/tobiiusb
 ExecStop=rm -rf /var/run/tobiiusb
