@@ -30,6 +30,8 @@ cd ~/Downloads (or wherever you have your downloads from your browser set to go)
 
 pacman -U ./tobii_engine_linux-0.1.6.193rc-1-x86_64.pkg.tar.zst ./tobiiproeyetrackermanager-2.6.1-1-x86_64.pkg.tar.zst ./tobiiusbservice-2.1.5-1-x86_64.pkg.tar.zst
 
+cd ~
+
 git clone https://github.com/megagtrwrath/tobii_eye_tracker_linux_installer
 
 cd ~/tobii_eye_tracker_linux_installer/Services
@@ -39,7 +41,18 @@ cp ./tobii_usb.service /etc/systemd/system/tobii_usb.service
 
 systemctl enable --now tobii_engine tobii_usb
 
+tar -xzf ./stream_engine_linux_3.0.4.60321.tar.gz
+
+sudo cp -r ./include/tobii /usr/include
+
+sudo cp -r ./lib/x64 /usr/lib/tobii
+
+sudo cp -r ./lib/x86 /usr/lib/tobii
+
 ```
+And that's it :)
+
+
 #### Configuration
 
 Run the Tobii Pro Eye Tracker Manager:
