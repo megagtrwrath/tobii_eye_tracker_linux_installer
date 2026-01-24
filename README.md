@@ -28,7 +28,7 @@ Download the .pkgs from the Releases section
 ```
 cd ~/Downloads (or wherever you have your downloads from your browser set to go)
 
-pacman -U ./tobii_engine_linux-0.1.6.193rc-1-x86_64.pkg.tar.zst ./tobiiproeyetrackermanager-1.12.1-1-x86_64.pkg.tar.zst ./tobiiusbservice-2.1.5-1-x86_64.pkg.tar.zst
+pacman -U ./tobii_engine_linux-0.1.6.193rc-1-x86_64.pkg.tar.zst ./tobiiproeyetrackermanager-2.6.1-1-x86_64.pkg.tar.zst ./tobiiusbservice-2.1.5-1-x86_64.pkg.tar.zst
 
 git clone https://github.com/megagtrwrath/tobii_eye_tracker_linux_installer
 
