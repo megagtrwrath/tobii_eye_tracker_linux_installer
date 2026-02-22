@@ -41,7 +41,7 @@ cp ./tobii_usb.service /etc/systemd/system/tobii_usb.service
 
 systemctl enable --now tobii_engine tobii_usb
 
-tar -xzf ./stream_engine_linux_3.0.4.60321.tar.gz
+tar -xzf ./stream_engine_linux_4.24.0-linux-x86_64.tar.gz
 
 sudo cp -r ./include/tobii /usr/include
 
