@@ -52,6 +52,8 @@ sudo cp -r ./lib/x86 /usr/lib/tobii
 ```
 And that's it :)
 
+There is also an installation [readme](./FEDORA.md) for Fedora.
+
 
 #### Configuration
 
